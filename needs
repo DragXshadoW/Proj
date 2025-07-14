@@ -22,20 +22,15 @@ mobilenet_v2_1.0_224.tflite (TFLite model file)
 
 labels.txt (MobileNet labels)
 
-
-
-5. Fix the bug in /voice route: Remove the stray string inside the with sr.AudioFile() block.
-
-
-6. Run your Flask app:
+5. Run your Flask app:
 
 python app.py
 
 
-7. Access the server at http://localhost:5000 or http://0.0.0.0:5000.
+6. Access the server at http://localhost:5000 or http://0.0.0.0:5000.
 
 
-8. For mobile testing:
+7. For mobile testing:
 
 Use 10.0.2.2 as the backend IP if using Android Emulator.
 
@@ -47,4 +42,4 @@ and update Flutter API URLs to ngrok’s address.
 
 
 
-9. Test endpoints: Add products, upload images, record audio, and export PDF.
+8. Test endpoints: Add products, upload images, record audio, and export PDF.
