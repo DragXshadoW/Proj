@@ -1,0 +1,50 @@
+1. Install Python 3.8+ on your system.
+
+
+2. Create and activate a virtual environment:
+
+python -m venv venv
+
+Activate with source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows).
+
+
+
+3. Install required Python packages:
+
+pip install flask transformers torch tensorflow pillow speechrecognition fpdf
+
+
+4. Place these files in your project directory:
+
+app.py (your Flask backend)
+
+mobilenet_v2_1.0_224.tflite (TFLite model file)
+
+labels.txt (MobileNet labels)
+
+
+
+5. Fix the bug in /voice route: Remove the stray string inside the with sr.AudioFile() block.
+
+
+6. Run your Flask app:
+
+python app.py
+
+
+7. Access the server at http://localhost:5000 or http://0.0.0.0:5000.
+
+
+8. For mobile testing:
+
+Use 10.0.2.2 as the backend IP if using Android Emulator.
+
+Or run ngrok to expose the backend publicly:
+
+ngrok http 5000
+
+and update Flutter API URLs to ngrok’s address.
+
+
+
+9. Test endpoints: Add products, upload images, record audio, and export PDF.
