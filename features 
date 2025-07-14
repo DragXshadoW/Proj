@@ -1,0 +1,35 @@
+1. Accepts product info via text input — parses product name, quantity, price, and unit from raw text.
+
+
+2. Generates AI-powered product descriptions using a pretrained DistilGPT2 text-generation model.
+
+
+3. Stores product details (including generated description) in a local SQLite database.
+
+
+4. Allows uploading images of products, then predicts the product label using a TensorFlow Lite MobileNet image classification model.
+
+
+5. Supports voice input by uploading audio files that are converted to text using Google Speech Recognition.
+
+
+6. Provides an API endpoint to retrieve the full product catalog as JSON.
+
+
+7. Allows clearing the entire catalog from the database on demand.
+
+
+8. Exports the catalog as a formatted PDF file that can be downloaded and viewed on the client device.
+
+
+9. Flutter Android app frontend that:
+
+Sends text, voice, or image inputs to backend.
+
+Displays the catalog in a scrollable list.
+
+Lets users add products with voice/image assistance.
+
+Offers text-to-speech feedback on successful product addition.
+
+Allows downloading and opening the catalog PDF on the device.
